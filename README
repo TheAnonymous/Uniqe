@@ -1,0 +1,13 @@
+WHERE ITS FOR::
+This Programm should only give out which Modules you need, so you can take them in rc.conf (this is Arch Linux spezific...)and set to MOD_AUTOLOAD="no".
+If you have any questions,improvments or problems please contact me under battleman2004[at]gmail.com
+
+
+HOW IT WORKS::
+Its just make "hwdetect --modules > module.txt" and "mkinitcpio -M > module.txt" and "lsmod"
+then parse it out of the files delete the files save it under Uniqe-Mudules.txt set rights to 777 and its done.
+Its very dirty coded because im running out of time and since 2 years nerver coded a line ruby so...
+
+HOW TO USE IT::
+Just type "ruby Uniqe.rb" thats it.
+You have to be root and you need the programms mkinitcpio, hwdetect, lsmod thats it.
