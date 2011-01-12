@@ -2,8 +2,8 @@
 #der teile zum parsen von hwdetect --modules & mkinitcpio -M
 
 begin
-system("hwdetect --modules > module.txt")
-system("mkinitcpio -M > module.txt") 
+system("hwdetect --modules >> module.txt")
+system("mkinitcpio -M >> module.txt") 
 myFile = File.new("module.txt", "r")
 rescue
   puts("Bitte loggen fuehren Sie es als root aus!")
